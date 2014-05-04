@@ -1,6 +1,15 @@
 ldap:
   :roles:
     - base
+    - rsyslog_client
     - slapd
   :ldap_port: 389
   :ldap_ip: 172.31.254.161
+  :rsyslog_server: 172.31.254.171
+
+rsyslog:
+  :roles:
+    - base
+    - rsyslog
+  :rsyslog_port: 514
+  :rsyslog_server: 172.31.254.171
