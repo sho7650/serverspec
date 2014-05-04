@@ -1,0 +1,6 @@
+ldap:
+  :roles:
+    - base
+    - slapd
+  :ldap_port: 389
+  :ldap_ip: 172.31.254.161
